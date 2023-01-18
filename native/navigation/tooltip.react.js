@@ -598,8 +598,10 @@ function createTooltip<
       this.props.setHideTooltip(true);
 
       const { entries } = this;
-      const options = entries.map(entry => entry.text);
-
+      const options = ['👍', 'Report'];
+      //variable options contains the choices you want in the action sheet
+      //when you click more
+      
       const {
         destructiveButtonIndex,
         cancelButtonIndex,
